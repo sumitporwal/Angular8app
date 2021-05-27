@@ -1,0 +1,64 @@
+<h3>Register</h3>
+<form [formGroup]="studentForm"  (ngSubmit)="RegisterForm(RegisterForm)" novalidate>
+  <div class="err" id="emperr">{{fielderr}}</div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" formControlName="name" class="form-control"  id="name" aria-describedby="emailHelp" [ngClass]="{'is-invalid':submitted && fields.name.errors}" placeholder="Enter Name" required>
+      <div  class="err" *ngIf="(fields.name.touched) && (fields.name.invalid)">
+      <span *ngIf="fields.name.errors.required">Student Name is Required</span>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp" [ngClass]="{'is-invalid':submitted && fields.name.errors}" placeholder="Enter Email" required>
+      <div class="err" *ngIf="(fields.email.touched) && (fields.email.invalid)">
+        <span *ngIf="fields.email.errors.required">Student Email is Required</span>
+        <span *ngIf="fields.email.errors.email">Invalid Email Format</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phno">Contact NO.</label>
+      <input type="number" formControlName="phno" class="form-control" id="phno" aria-describedby="emailHelp" [ngClass]="{'is-invalid':submitted && fields.name.errors}" placeholder="Enter Contact NO." required>
+      <div class="err" *ngIf="(fields.phno.touched) && (fields.phno.invalid)">
+        <span *ngIf="fields.phno.errors.required">Student Contact NO. is Required</span>
+        <span *ngIf="fields.phno.errors.pattern">Invalid Contact NO.</span>
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="password" [ngClass]="{'is-invalid':submitted && fields.name.errors}" placeholder="Password" required>
+      <div class="err" *ngIf="(fields.password.touched) && (fields.password.invalid)">
+        <span *ngIf="fields.password.errors.minlength">min Length of password must be 6</span>
+        <span *ngIf="fields.password.errors.required">Password is Required</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" formControlName="confirmpassword" class="form-control" id="confirmpassword" placeholder="Confirm Password" required>
+      </div>
+    <div>  
+    <button type="submit" class="btn btn-primary" ng-disabled="submitted" data-toggle="modal"  data-target="#myModal">Submit</button>
+  </div>
+    <div>
+    <small>Already have an Account <a id="log" routerLink="../login">Login Here</a></small>
+  </div>
+  </form>
+  <div class="modal" id="myModal" [hidden]="!submitted">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+  
+        <div class="modal-body" id="content">
+             {{msg}}
+        </div>
+        <div>
+          <a  id="btn" class="btn btn-success" data-dismiss="modal" routerLink="../login">OK</a>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  

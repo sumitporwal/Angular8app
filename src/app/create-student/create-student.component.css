@@ -1,0 +1,40 @@
+form{
+    width: 25%;
+    margin: 0% auto;
+    max-width: 350px;
+    min-width: 200px;
+}
+#log{
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+h3{
+    margin: 3% auto;
+    text-align: center;
+}
+.err{
+    color: red;
+    font-size: 12px;
+}
+#emp{
+        color: red;
+        font-size: 12px;
+}
+.close{
+    text-align: right;
+    margin-right: 20px;
+}
+#btn{
+margin: auto 40%;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+#content{
+    text-align: center;
+    font-size: 24px;
+}
+#emperr{
+    text-align: center;
+    font-size: 15px;
+}

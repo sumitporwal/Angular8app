@@ -1,0 +1,19 @@
+form{
+    width: 25%;
+    margin: 0% auto;
+    max-width: 350px;
+    min-width: 200px;
+}
+#log{
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+h3{
+    margin: 3% auto;
+    text-align: center;
+}
+.err{
+    color: red;
+    font-size: 12px;
+}

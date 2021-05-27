@@ -1,0 +1,23 @@
+.navbar-brand{
+    width: 40%;
+    height: 50px;
+    margin-top: 0px;
+    margin-left:15px;
+}
+.nav-link{
+    font-size: 20px;
+}
+#logo{
+    width: 100%;
+    height: 40px;
+}
+button{
+    background-color:transparent;
+    border: none;
+}
+nav-item{
+    text-align: center;
+}
+#Log{
+    text-align: center;
+}

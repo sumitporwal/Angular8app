@@ -1,0 +1,83 @@
+h3{
+    color: crimson;
+    text-align: center;
+    margin: 5% auto;
+    margin-bottom:1% ;
+}
+table{
+    margin: auto;
+    width: 80%;
+}
+.sidebar{
+    height: 100%; 
+    width: 0;
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
+    left: 0; 
+    background-color:white;
+    overflow-x: hidden;  
+    transition: 0.5s; 
+}
+.closebtn{
+font-size: 35px;
+position: absolute;
+top: 1%;
+left: 32%;
+z-index: 2;
+color: white;
+cursor: pointer;
+display: none;
+}
+.openbtn{
+color: white;
+cursor: pointer;
+font-size:30px;
+position: absolute;
+top: 17px;
+left:15px;
+font-size: 30px;
+text-align: center;
+}
+.openbtndiv{
+width: 30px;
+height: 30px;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+}
+.sign-in{
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 30px;
+    margin-left:15px;
+}
+#main{
+   height:100vh; 
+}
+#hel{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+#submit1{
+    width: 30%;
+    margin-right: 5px;
+    margin-left: 10%;
+}
+#submit2{
+    width: 30%;
+    margin-right: 10px;
+}
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15%;
+}
